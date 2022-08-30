@@ -1,25 +1,19 @@
 /*_______________________ Main Css _______________________*/
 :root {
-  --primary_color: #3bb77e;
-  --green_btn_bg: #def9ec;
+  --mc1: #cc00ff;
+  --mc2: #7000ff;
+  --hc: #ddd;
+  --bc: #9ba0b8;
   --white: #fff;
   --black: #000;
-  --dark_color: #253d4e;
-  --grey_color: #7e7e7e;
-  --grey_light:#adadad;
-  --grey_light_1:#b6b6b6;
-  --grey_card_bg: #f4f6fa;
-  --pink_color: #f74b81;
-  --blue_color:#67bcee;
-  --orange_color:#f59758;
-  --orange_color_light: #FDC040;
   --h1: 7.2rem;
   --h2: 4rem;
   --h3: 3.2rem;
   --h4: 2.4rem;
   --h5: 1.8rem;
   --h6: 1.6rem;
-  --font_family: "Quicksand";
+  --font_family_1: "Heebo",sans-serif;
+  --font_famliy_2: "Nunito",sans-serif;
   --trans: all ease 0.5s;
 }
 
@@ -32,10 +26,11 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  background-color: var(--white);
-  color: var(--black);
+  background: linear-gradient(90deg, #1b121d 0, #120f2f 50%, #1b121d 100%);
+  color: var(--bc);
   font-size: 1.4rem;
-  font-family: var(--font_family);
+  font-family: var(--font_family_1);
+  font-family: var(--font_family_2);
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -258,4 +253,22 @@ label {
 .form-control:-webkit-autofill {
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+#header .navbar {
+  padding: 3rem;
+}
+#header .navbar .navbar__nav {
+  display: flex;
+  justify-content: space-between;
+}
+#header .navbar .navbar__nav .logo__box {
+  display: flex;
+  align-items: center;
+}
+#header .navbar .navbar__nav .logo__box .burger__menu {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
 }/*# sourceMappingURL=main.min.css.map */

@@ -1,0 +1,25 @@
+#header{
+  .navbar{
+    padding: 3rem;
+    .navbar__nav{
+      display: flex;
+      justify-content: space-between;
+
+      .logo__box{
+        display: flex;
+        align-items: center;
+
+        .burger__menu{
+          height: 5rem;
+          width: 5rem;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .logo{
+
+        }
+      }
+    }
+  }
+}
