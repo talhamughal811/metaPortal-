@@ -18,8 +18,8 @@
 	--h5: 1.8rem;
 	--h6: 1.6rem;
 
-	--font_family_1: 'Heebo',sans-serif;
-	--font_famliy_2: 'Nunito',sans-serif;
+	--font_family_h: 'Heebo',sans-serif;
+	--font_famliy_n: 'Nunito',sans-serif;
 	--trans: all ease 0.5s;
 }
 
@@ -49,21 +49,20 @@ body {
 	background: linear-gradient(90deg,#1b121d 0,#120f2f 50%,#1b121d 100%);
 	color: var(--bc);
 	font-size: 1.4rem;
-	font-family: var(--font_family_1);
-	font-family: var(--font_family_2);
+	font-family: var(--font_famliy_n);
 	font-weight: 400;
 	margin: 0;
 	padding: 0;
 	line-height: 1.4;
 	word-break: break-word;
 	a {
-		color: var(--black);
+		color: var(--hc);
 		font-size: 1.6rem;
 		word-break: break-word;
 		text-decoration: none;
 		transition: var(--trans);
 		&:hover {
-			color: var(--primary_color);
+			color: var(--white);
 		}
 		&:focus,
 		&:hover {
@@ -128,44 +127,16 @@ h6 {
 	font-weight: 600;
 	line-height: 1.1;
 	margin: 0 0 1rem;
-	font-family: var(--font_family);
+	font-family: var(--font_family_h);
 	> a {
 		color: inherit;
 	}
 	> strong {
-		color: var(--primary_color);
+		color: var(--hc);
 		font-weight: inherit;
 	}
 }
 
-.heading__primary{
-	font-size: 7.2rem;
-	color: var(--dark_color);
-	line-height: 1;
-	font-weight: 700;
-}
-
-.heading__secondary{
-	font-size: 4rem;
-	line-height: 1.2;
-	font-weight: 700;
-	color: var(--dark_color);
-}
-
-.heading__tertiary{
-	font-weight: 700;
-	font-size: 3.2rem;
-	color: var(--dark_color);
-
-}
-
-.heading__forth{
-	font-size: 2.4rem;
-	font-weight: 700;
-	line-height: 1.2;
-	color: var(--dark_color);
-
-}
 
 .mb-20{
 	margin-bottom: 2rem !important;
@@ -195,7 +166,7 @@ p {
 	margin: 0 0 1rem;
 	> a {
 		display: inline;
-		color: var(--prime_color);
+		color: var(--hc);
 		&:hover {
 			color: #2115dc;
 		}
@@ -205,25 +176,34 @@ p {
 	}
 }
 
+
+
+
 .btn {
-	@include inline_flex;
-	position: relative;
-	height: 4rem;
-	background: var(--primary_color);
-	color: var(--white);
-	font-size: 1.4rem;
-	font-family: var(--font_family);
-	font-weight: 600;
-	text-align: center;
-	padding: 0 2.5rem;
-	white-space: nowrap;
-	border: 0;
-	border-radius: 5rem;
-	outline: none !important;
+	display: block;
+    width: fit-content;
+    max-width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: .05rem;
+    font-family: var(--font_family_h);
+    height: 5rem;
+    line-height: 5rem;
+    padding: 0 3.4rem;
+    position: relative;
+    color: var(--hc);
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    background-color: transparent;
+    outline: transparent 0;
 	transition: var(--trans);
+	border: 2px solid var(--mc1);
+	border-radius: .6rem;
 	&:hover {
-		background: var(--secondary_color);
-		color: var(--dark_color);
+		background: transparent;
+		color: var(--white);
 	}
 }
 
